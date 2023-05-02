@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form.com</title>
     <style>
+       
+
         *{
             
             font-size: 17px;
@@ -63,8 +65,8 @@ div input{
     border-radius: 10px;
     border: 2px solid black;
     display: block;
-    /* margin-left: 430px; */
-    margin: auto;
+    margin-left: 430px;
+    width: 131px;
 
 }
 #bg:hover{
@@ -113,99 +115,100 @@ div input{
 
         </div>
     </div>
+    <form action="/myaction.php" name="my form" onsubmit="return validateform()" method="get">
     <div class="get">
-    <div class="form" id="forms1">
+    <div class="form" id="forms1" name="n1">
      NHS#...*
     </div>
     <div class="form5" id="forms2">
-        <input type="text" class="btn" placeholder="NHS#">
+        <input type="text" class="btn" placeholder="NHS#" name="n1" ><span id="form error"></span>
     </div>
-    <div class="form" id="forms3">
+    <div class="form" id="forms3"name="n1">
      Full Name...*
     </div>
     <div class="form5" id="forms4">
-        <input type="text" class="btn" placeholder="Full Name"> 
+        <input type="text" class="btn" placeholder="Full Name"name="n1"><span id="form error"></span> 
     </div>
-    <div class="form" id="forms5">
+    <div class="form" id="forms5"name="n1">
       Date of Birth...*
     </div>
     <div class="form5" id="forms6">
-        <input type="date" class="btn" placeholder="Date of Birth">    
+        <input type="date" class="btn" placeholder="Date"name="n1"><span id="form error"></span>    
     </div>
-    <div class="form" id="forms7">
+    <div class="form" id="forms7"name="n1">
     Address...*
     </div>
     <div class="form5" id="forms8">
-        <input type="text" class="btn" placeholder="Address">
+        <input type="text" class="btn" placeholder="Address"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms9">
+    <div class="form" id="forms9"name="n1">
      Phone number...*
     </div>
     <div class="form5" id="forms10">
-        <input type="number" class="btn" placeholder="Phone number">
+        <input type="number" class="btn" placeholder="Phone"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms11">
+    <div class="form" id="forms11"name="n1">
      Parent/Guardian Name...*
     </div>
     <div class="form5" id="forms12">
-        <input type="text" class="btn" placeholder="Parent/Guardian Name">
+        <input type="text" class="btn" placeholder="Parent/Guardian Name"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms13">
+    <div class="form" id="forms13"name="n1">
      Parent/Guardian Phone Number...* 
     </div>
     <div class="form5" id="forms14">
-        <input type="number" class="btn" placeholder="Parent/Guardian Number">
+        <input type="number" class="btn" placeholder="Parent/Guardian Phone Number"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms15">
+    <div class="form" id="forms15"name="n1">
         Parent/Guardian Email Address...*
     </div>
     <div class="form5" id="forms16">
-        <input type="email" class="btn" placeholder="Parent/Guardian Email Address">
+        <input type="email" class="btn" placeholder="Parent/Guardian Email Address"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms17">
+    <div class="form" id="forms17"name="n1">
      Referring Orginization...*
     </div>
     <div class="form5" id="forms18">
-        <input type="text" class="btn" placeholder="Referring Orginization">
+        <input type="text" class="btn" placeholder="Referring Orginization"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms19">
+    <div class="form" id="forms19"name="n1">
      Referrer...*
     </div>
     <div class="form5" id="forms20">
-        <input type="text" class="btn" placeholder="Referrer">
+        <input type="text" class="btn" placeholder="Referrer"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms21">
+    <div class="form" id="forms21"name="n1">
     Referrer Email...* 
     </div>
     <div class="form5" id="forms22">
-        <input type="email" class="btn" placeholder="Referrer Email">
+        <input type="email" class="btn" placeholder="Referrer Email"name="n1"><span id="form error"></span>
     </div>
-    <div class="form" id="forms23">
+    <div class="form" id="forms23"name="n1">
         <label for="RCADS Score Completed">RCADS Score Completed?</label>
     </div>
-    <div class="form5" id="forms24">
+    <div class="form5" id="forms24"name="n1">
         <select name="select an options" class="my">
             <option>Select an option</option>
             <option value="yes">yes</option>
             <option value="no">no</option>
-         </select>
+         </select><span id="form error"></span>
     </div>
-    <div class="form" id="forms25">
-     Please Detail 'Reason for Referal'...*
+    <div class="form" id="forms25"name="n1">
+     Please Detail 'Reason for Referral'...*
     </div>
-    <div class="form5" id="forms26">
-        <input type="text" class="btn1" placeholder="Please Detail Reason for Referal">
+    <div class="form5" id="forms26"name="n1">
+        <input type="text" class="btn1" placeholder="Please Detail Reason for Referral"><span id="form error"></span>
     </div>
-    <div class="form" id="forms27">
+    <div class="form" id="forms27"name="n1">
     Additional information and Goals...*
     </div>
-    <div class="form5" id="forms28">
-        <input type="text" class="btn1" placeholder="Additional information and Goals">
+    <div class="form5" id="forms28"name="n1">
+        <input type="text" class="btn1" placeholder="Additional information and Goals"><span id="form error"></span>
     </div>
-    <div class="form" id="forms29">
+    <div class="form" id="forms29"name="n1">
      Do any of the following apply to the patient?...* 
     </div>
-    <div class="form1" id="forms30">
+    <div class="form1" id="forms30" name="n1">
      <input type="checkbox"class="btn"> Diagnosis of Autism Spectrum Condition
      <div class="form1" id="forms36">
      <input type="checkbox"class="btn"> Diagnosis of ADHD
@@ -217,20 +220,20 @@ div input{
      <input type="checkbox"class="btn"> Awaiting assessment for neurodiversicty
      <div class="form1" id="forms36">
      <input type="checkbox"class="btn"> No known or susceptive neurodiversity at the time of referral
-     </div>
+     </div><span id="form error"></span>
     </div>
-    <div class="form" id="forms31">
+    <div class="form" id="forms31"name="n1">
         <label for="Risk of Harm">Risk of Harm...*</label>
     </div>
-    <div class="form5" id="forms32">
+    <div class="form5" id="forms32"name="n1">
         <select name="select Risk" class="my">
             <option>Select Risk</option>
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
-         </select>
+         </select><span id="form error"></span>
     </div>
-    <div class="form" id="forms33">
+    <div class="form" id="forms33"name="n1">
         <label for="Consent of VR Therapy">Consent of VR Therapy...*</label>
     </div>
     <select name="select an options"class="my">
@@ -238,11 +241,31 @@ div input{
             <option>Select an option</option>
             <option value="yes">yes</option>
             <option value="no">no</option>
-         </select>
+         </select><span id="form error"></span>
     </div>
     <div class="form" id="forms35">
-      <input id="bg" class="button" type="submit" value="send referral">
+     <input id="bg" class="button" type="submit" value="send referral">
     </div>
     </div>
+</form>
 </body>
+<script>
+ function seterror(id,error){
+    element = document.getElementById(id)
+    element.getElementsByclassName('formerror')[0].innerHTML = error;
+ }
+ function validateform()
+ {
+ var returnval = true;
+ 
+var forms1 = document.forms['my form']["n1"].value;
+if (n1.length==0){
+    seterror("n1","REQUIRED*");
+    returnval = false;
+
+}
+ }
+
+</script>
+
 </html>
