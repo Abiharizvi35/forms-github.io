@@ -1,276 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form.com</title>
-    <style>
-        *{
-            
-            font-size: 17px;
-        }
-        body h1{
-            text-align: center;
-            padding-bottom:9px ;
-            font-size: 30px;
-        }
-        .up{
-             background-color: rgb(224, 224, 135);
-            width: 457px;
-            padding: 9px ;
-            margin: auto;
-            
-           
-            
-        }
-#mat1{
-    text-decoration: underline;
-}
-    .container{
-        width: 475px;
-        border: 30px solid rgb(244, 245, 179);
-        margin: auto;
-    }
-.get{
-    /* border: 2px solid black; */
-    width: 450px;
-    margin: auto;
-}
-.form{
-    margin: 9px;
-    padding: 5px;
-    text-size-adjust: 340px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.btn1{
-    size: 340px;
-    padding: 14px;
-    width: 65%;
-}
-div input{
-    border: 2px solid black;
-    background-color: rgb(180, 221, 105);
-    padding: 13px;
-}
-.form5{
-    width: 340px 340px;
-    
-}
-#bg{
-     padding: 13px;
-     background-color:  blueviolet;
-    border-radius: 10px;
-    border: 2px solid black;
-    display: block;
-    /* margin-left: 430px; */
-    margin: auto;
-
-}
-#bg:hover{
-    background-color:  palevioletred;
-    cursor: pointer;
-}
-.my{
-    border: 2px solid black;
-    background-color: rgb(180, 221, 105);
-    padding: 13px;
-}
-
-    </style>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>myForm.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 <body>
-    <h1>Concept Health-Mental Health VR Refarral Form</h1>
-    <div class="container">
-        <div class="up" id="mat1">
-        EXCLUSION CRITERIA
-        </div>
-        <div class="up" id="34">
-            please note VR Therapy  is NOT Suitable for patients with:
-        </div>
-        <div class="up" id="mat2">
-            1. Less than 13 years of Age
-        </div>
-        <div class="up" id="mat3">
-            2. Activate PTSD without prior Assessment with CAMHS practitioner
-        </div>
-        <div class="up" id="mat4">
-            3. Undiagnosed vertigo
-        </div>
-        <div class="up" id="mat5">
-            4. scoliosis
-        </div>
-        <div class="up" id="mat6">
-            5. Epilepsy
-        </div>
-        <div class="up" id="mat7">
-            6. Recent surgeory that may impact mobility
-        </div>
-        <div class="up" id="mat8">
+  <form action="/myaction.php" onsubmit="return" method="post">
+  <div class="container-lg">
+    <div class="w-120 p-2 m-4"><h1>Concept Health-Mental Health VR Refarral Form</h1></div>
+ <div class="row bg-warning w-75 text-centers border-dangers m-5 ">
+  <div class="w-10 p-3 text-body-emphasis"> <u> EXCLUSION CRITERIA </u></div>
 
-        </div>
-        <div class="up" id="mat9">
+  <div class="w-80 p-3 text-body-emphasis"> please note VR Therapy  is NOT Suitable for patients with:</div>
+  <div class=" m-3">
+  <div class="w-15 p-0"> 1. Less than 13 years of Age</div>
 
-        </div>
-    </div>
-    <form action="/myaction.php" name="my form" onsubmit="return validateForm()" method="post">
-    <div class="get">
-    <div class="form" id="forms1">
-     NHS#...*
-    </div>
-    <div class="form5" id="forms2">
-        <input type="text" class="btn" placeholder="NHS#" name="n1" required>
-    </div>
-    <div class="form" id="forms3">
-     Full Name...*
-    </div>
-    <div class="form5" id="forms4">
-        <input type="text" class="btn" placeholder="Full Name" name="n1"required> 
-    </div>
-    <div class="form" id="forms5">
-      Date of Birth...*
-    </div>
-    <div class="form5" id="forms6">
-        <input type="date" class="btn" placeholder="Date of Birth" name="n1"required >    
-    </div>
-    <div class="form" id="forms7">
-    Address...*
-    </div>
-    <div class="form5" id="forms8">
-        <input type="text" class="btn" placeholder="Address" name="n1" required>
-    </div>
-    <div class="form" id="forms9">
-     Phone number...*
-    </div>
-    <div class="form5" id="forms10">
-        <input type="number" class="btn" placeholder="Phone number" name="n1" required>
-    </div>
-    <div class="form" id="forms11">
-     Parent/Guardian Name...*
-    </div>
-    <div class="form5" id="forms12">
-        <input type="text" class="btn" placeholder="Parent/Guardian Name" name="n1" required>
-    </div>
-    <div class="form" id="forms13">
-     Parent/Guardian Phone Number...* 
-    </div>
-    <div class="form5" id="forms14">
-        <input type="number" class="btn" placeholder="Parent/Guardian Number" name="n1" required>
-    </div>
-    <div class="form" id="forms15">
-        Parent/Guardian Email Address...*
-    </div>
-    <div class="form5" id="forms16">
-        <input type="email" class="btn" placeholder="Parent/Guardian Email Address" name="n1" required>
-    </div>
-    <div class="form" id="forms17">
-     Referring Orginization...*
-    </div>
-    <div class="form5" id="forms18">
-        <input type="text" class="btn" placeholder="Referring Orginization" name="n1" required>
-    </div>
-    <div class="form" id="forms19">
-     Referrer...*
-    </div>
-    <div class="form5" id="forms20">
-        <input type="text" class="btn" placeholder="Referrer" name="n1"required>
-    </div>
-    <div class="form" id="forms21">
-    Referrer Email...* 
-    </div>
-    <div class="form5" id="forms22">
-        <input type="email" class="btn" placeholder="Referrer Email" name="n1" required>
-    </div>
-    <div class="form" id="forms23">
-        <label for="RCADS Score Completed">RCADS Score Completed?</label>
-    </div>
-    <div class="form5" id="forms24">
-        <select name="select an options" class="my">
-            <option>Select an option</option>
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-         </select>
-    </div>
-    <div class="form" id="forms25">
-     Please Detail 'Reason for Referal'...*
-    </div>
-    <div class="form5" id="forms26">
-        <input type="text" class="btn1" placeholder="Please Detail Reason for Referal" name="n1" required>
-    </div>
-    <div class="form" id="forms27">
-    Additional information and Goals...*
-    </div>
-    <div class="form5" id="forms28">
-        <input type="text" class="btn1" placeholder="Additional information and Goals" name="n1" required>
-    </div>
-    <div class="form" id="forms29">
-     Do any of the following apply to the patient?...* 
-    </div>
-    <div class="form1" id="forms30">
-     <input type="checkbox"class="btn" name="n1"> Diagnosis of Autism Spectrum Condition
-     <div class="form1" id="forms36">
-     <input type="checkbox"class="btn"> Diagnosis of ADHD
+  <div class="w-15 p-0 ">2. Activate PTSD without prior Assessment with CAMHS practitioner</div>
+
+  <div class="w-15 p-0">3. Undiagnosed vertigo</div>
+
+  <div class="w-15 p-0 m"> 4. scoliosis</div>
+
+  <div class="w-15 p-0 ">5. Epilepsy</div>
+
+  <div class="w-15 p-0"> 6. Recent surgeory that may impact mobility</div>
+  </div>
+  </div>
+<div class="text-black m-5 p-2 ">
+<h5>NHS#...*</h5>
+<div class="" >
+    <input type="text" class="bg-success w-25 p-2" required >
+</div>
+<div class="form" >
+ <h5>Full Name...*</h5>
+</div>
+<div class="form" >
+    <input type="text"  class="bg-success w-25 p-2" required>
+</div>
+<div class="" >
+ <h5>Date of Birth...*</h5>
+</div>
+<div class="">
+    <input type="date"  class="bg-success w-25 p-2" required>  
+</div>
+<div class="form">
+<h5>Address...*</h5>
+</div>
+<div class="" >
+    <input type="text"  class="bg-success w-25 p-2" required >
+</div>
+<div class="form" >
+ <h5>Phone number...*</h5>
+</div>
+<div class="" >
+    <input type="number" class="bg-success w-25 p-2" required >
+</div>
+<div class="form" >
+<h5> Parent/Guardian Name...*</h5>
+</div>
+<div class="" >
+    <input type="text"  class="bg-success w-25 p-2" required>
+</div>
+<div class="form" >
+ <h5>Parent/Guardian Phone Number...* </h5>
+</div>
+<div class="form5" >
+    <input type="number" class="bg-success w-25 p-2" required >
+</div>
+<div class="form" >
+   <h5> Parent/Guardian Email Address...*</h5>
+</div>
+<div class="form5" >
+    <input type="email" class="bg-success w-25 p-2" required>
+</div>
+<div class="form" >
+ <h5>Referring Orginization...*</h5>
+</div>
+<div class="form5" >
+    <input type="text"  class="bg-success w-25 p-2" required>
+</div>
+<div class="form" >
+ <h5>Referrer...*</h5>
+</div>
+<div class="form5">
+    <input type="text"  class="bg-success w-25 p-2" required>
+</div>
+<div class="form " >
+<h5>Referrer Email...* </h5>
+</div>
+<div class="form5   " >
+    <input type="email"  class="bg-success w-25 p-2 " required>
+</div>
+<div class="form5" >
+  <div class="form" >
+    <label for="RCADS Score Completed"><h5>RCADS Score Completed?</h5></label>
+    <div>
+  <select class="p-3 bg-success">
+      <option>Select an option</option>
+      <option value="yes">yes</option>
+      <option value="no">no</option>
+   </select><span id="form error"></span>
+</div>
+<div class="form" >
+  <h5>Please Detail 'Reason for Referral'...*</h5>
+ </div>
+ <div class="form5" >
+     <input type="text" class=" bg-success w-25 p-2" >
+ </div>
+ <div class="form" >
+ <h5>Additional information and Goals...*</h5>
+ </div>
+ <div class="form5">
+     <input type="text" class="bg-success w-25 p-2" >
+     <div class="form" id="forms29">
+      <h5>Do any of the following apply to the patient?...*</h5> 
      </div>
-     <input type="checkbox"class="btn"> Diagnosis of both ASD and ADHD
-     <div class="form1" id="forms36">
-     <input type="checkbox"class="btn"> Diagnosis of intellectual Disability
+     <div class="form1" >
+      <input type="checkbox"> Diagnosis of Autism Spectrum Condition
+      <div class="form1" >
+      <input type="checkbox"> Diagnosis of ADHD
+      </div>
+      <input type="checkbox"> Diagnosis of both ASD and ADHD
+      <div class="form1" >
+      <input type="checkbox"> Diagnosis of intellectual Disability
+      </div>
+      <input type="checkbox"> Awaiting assessment for neurodiversicty
+      <div class="form1" >
+      <input type="checkbox"> No known or susceptive neurodiversity at the time of referral
+      </div>
      </div>
-     <input type="checkbox"class="btn"> Awaiting assessment for neurodiversicty
-     <div class="form1" id="forms36">
-     <input type="checkbox"class="btn"> No known or susceptive neurodiversity at the time of referral
+     <div class="form text-body-emphasis p-2" >
+         <label for="Risk of Harm"><h5>Risk of Harm...*</h5></label>
      </div>
-    </div>
-    <div class="form" id="forms31">
-        <label for="Risk of Harm">Risk of Harm...*</label>
-    </div>
-    <div class="form5" id="forms32">
-        <select name="select Risk" class="my">
-            <option>Select Risk</option>
-            <option value="High">High</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
-         </select>
-    </div>
-    <div class="form" id="forms33">
-        <label for="Consent of VR Therapy">Consent of VR Therapy...*</label>
-    </div>
-    <select name="select an options"class="my">
-            <div class="form5" id="forms34">
-            <option>Select an option</option>
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-         </select>
-    </div>
-    <div class="form" id="forms35">
-        <input id="bg" class="button" type="submit" value="send referral" onclick="deletecontent()" >
-    </div>
-    </div>
-    </form>
+ </div>
+ <div class="form5 p-2"  >
+  <select name="select Risk" class="w-25 bg-success p-3" required>
+      <option>Select Risk</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+   </select>
+</div>
+<div class="form m-5">
+  <input  class="button w-25 p-3 bg-danger border-5" type="submit" value="send referral">
+ </div>
+ </div>
+
+
+
+  </div>
+</form>
 </body>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-    window.addEventListener ('load',function(){
-    });
-       
-       function deletecontent(){
-            alert ('hello!')
-swal({
-    title: "Are you sure?",
-    icon: "warning",
-    buttons: true,
-    dangerMode: true,
-  })
-  .then((willDelete) => {
-    if (willDelete) {
-    console.log('yes')
-      }
-     else {
-      console.log('no')
-    }
-
-  });
-};
-        
-
-  </script>
 </html>
